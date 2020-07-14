@@ -1,0 +1,27 @@
+$path: '/fonts/';
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url($path + 'Roboto-Regular.woff') format("woff"),
+       url($path + 'Roboto-Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url($path + 'Roboto-Bold.woff') format("woff"),
+    url($path + 'Roboto-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: url($path + 'Roboto-Light.woff') format("woff"),
+  url($path + 'Roboto-Light.ttf') format("truetype");
+}
+
+
