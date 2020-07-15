@@ -83,7 +83,7 @@ module.exports = {
             use: [
                 // 'cache-loader',
                 {
-                    loader: 'file-loader?name=./image/[hash].[ext]'
+                    loader: 'file-loader?name=./img/[hash].[ext]'
                 },
 
             ]
@@ -133,8 +133,9 @@ module.exports = {
                     },
                 ],
             },
+
             {
-                test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+                test: /\.(woff|woff2|eot|ttf)(\?.*$|$)/,
                 use: {
                     loader: "file-loader",
                     options: {

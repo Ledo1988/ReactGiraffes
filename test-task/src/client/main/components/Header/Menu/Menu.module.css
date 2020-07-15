@@ -1,26 +1,21 @@
 /*
 Error: Undefined variable: "$grid-unit".
-        on line 14 of Menu.module.scss
+        on line 8 of Menu.module.scss
 
-9:     flex-direction: column;
-10:     align-items: center;
-11:     justify-content: center;
-12:     font-weight: bold;
-13:     letter-spacing: 0.03em;
-14:     padding: $grid-unit $grid-unit*2;
-15: 
-16:     &:hover, &Active {
-17:       &:before {
-18:         opacity: 1;
-19:       }
+3: }
+4: 
+5: .list {
+6: 
+7:   &Item {
+8:     margin-bottom: $grid-unit*5;
+9:   }
+10: }
 
 Backtrace:
-Menu.module.scss:14
+Menu.module.scss:8
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/operation.rb:67:in `_perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
 C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -77,4 +72,4 @@ C:/Ruby26-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$grid-unit\".\A         on line 14 of Menu.module.scss\A \A 9:     flex-direction: column;\A 10:     align-items: center;\A 11:     justify-content: center;\A 12:     font-weight: bold;\A 13:     letter-spacing: 0.03em;\A 14:     padding: $grid-unit $grid-unit*2;\A 15: \A 16:     &:hover, &Active {\A 17:       &:before {\A 18:         opacity: 1;\A 19:       }"; }
+  content: "Error: Undefined variable: \"$grid-unit\".\A         on line 8 of Menu.module.scss\A \A 3: }\A 4: \A 5: .list {\A 6: \A 7:   &Item {\A 8:     margin-bottom: $grid-unit*5;\A 9:   }\A 10: }"; }
