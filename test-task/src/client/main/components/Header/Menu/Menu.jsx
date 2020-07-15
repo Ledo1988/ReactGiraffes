@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Menu.module.scss";
+import s from "./Menu.module.scss";import {NavLink} from "react-router-dom";
 import MenuItem from "../MenuItem/MenuItem";
 
 const Menu = () => {
@@ -7,27 +7,22 @@ const Menu = () => {
 		<section className={s.menu}>
 			<ul className={s.list}>
 				<li className={`${s.listItem} ${s.listItemProfile}`}>
-					<MenuItem />
+					<MenuItem to="/main" name="Главная" className="main"/>
 				</li>
 				<li className={`${s.listItem} ${s.listItemMessages}`}>
-					<NavLink to="/management" activeClassName={s.listLinkActive} className={s.listLink}>
-						<span className={s.listTitle}>Управление</span>
-					</NavLink>
+					<MenuItem to="/management" name="Управление" className="management"/>
 				</li>
 				<li className={`${s.listItem} ${s.listItemNews}`}>
-					<NavLink to="/giraffes" activeClassName={s.listLinkActive} className={s.listLink}>
-						<span className={s.listTitle}>News</span>
-					</NavLink>
+					<MenuItem to="/giraffes" name="Жирафы" className="giraffes"/>
 				</li>
 				<li className={`${s.listItem} ${s.listItemMusic}`}>
-					<NavLink to="/staff" activeClassName={s.listLinkActive} className={s.listLink}>
-						<span className={s.listTitle}>Music</span>
-					</NavLink>
+					<MenuItem to="/staff" name="Сотрудники" className="staff"/>
 				</li>
 				<li className={`${s.listItem} ${s.listItemSettings}`}>
-					<NavLink to="/settings" activeClassName={s.listLinkActive} className={s.listLink}>
-						<span className={s.listTitle}>Settings</span>
-					</NavLink>
+					<MenuItem to="/settings" name="Настройки" className="settings"/>
+				</li>
+				<li className={`${s.listItem} ${s.listItemSettings}`}>
+					<MenuItem to="/support" name="Поддержка" className="support"/>
 				</li>
 			</ul>
 		</section>

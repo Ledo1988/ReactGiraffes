@@ -6,9 +6,7 @@ const MenuItem = (props) => {
 	let classNames = ["link", props.className].join(" ");
 
 	return (
-
-
-		<NavLink to={props.to} activeClassName={props.active} className=classNames>
+		<NavLink to={props.to} activeClassName={s.listLinkActive} className={classNames}>
 			<span className={s.listTitle}>{props.name}</span>
 		</NavLink>
 	)

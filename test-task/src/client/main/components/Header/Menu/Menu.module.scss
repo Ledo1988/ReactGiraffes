@@ -3,10 +3,6 @@
 }
 
 .list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: $grid-unit*2;
 
   &Link {
     display: flex;
