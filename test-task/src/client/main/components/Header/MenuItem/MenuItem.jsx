@@ -4,11 +4,11 @@ import s from "./MenuItem.module.scss";
 import MySvg from "../../MySvg/MySvg";
 
 const MenuItem = (props) => {
-	let classNames = ["link", props.className].join(" ");
+	let classNames = ['menu-link', s.link, props.className].join(" ");
 
 	return (
 		<NavLink to={props.to} activeClassName={s.linkActive} className={classNames}>
-			<MySvg name={props.svgSrc} height={props.svgHeight} width={props.svgWidth} fill={props.svgFill} />
+			<MySvg class={props.svgClass} name={props.svgSrc} height={props.svgHeight} width={props.svgWidth} />
 			<span className={s.linkTitle}>{props.name}</span>
 		</NavLink>
 	)

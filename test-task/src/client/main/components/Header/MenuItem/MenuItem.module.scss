@@ -5,21 +5,7 @@
   border-radius: 52px;
   background-color: $color-primary;
   padding: $grid-unit*3 $grid-unit*4;
-
-  &::before{
-  content: '';
-    display: block;
-    height: 28px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  &.main {
-    &::before{
-      width: 27px;
-    }
-  }
+  color: $color-secondary;
 
   &Title {
     font-weight: 300;
@@ -27,4 +13,17 @@
     color: $color-white;
     margin-left: 25px;
   }
+
+  &Active {
+    background-color: $color-white;
+    color: $color-primary;
+
+    .linkTitle {
+      font-weight: 500;
+      font-size: 19px;
+      color: $color-primary;
+    }
+  }
+
 }
+

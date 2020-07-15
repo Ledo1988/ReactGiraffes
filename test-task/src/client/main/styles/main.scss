@@ -11,7 +11,7 @@
   border-radius: 35px;
   display: grid;
   grid-template-areas: "header main";
-  grid-template-columns: 294px auto;
+  grid-template-columns: 237px auto;
   grid-auto-rows: max-content;
   grid-gap: 0 25px;
 }
@@ -36,4 +36,10 @@
 
 .content {
   padding: $grid-unit*2 0;
+}
+
+
+
+svg path {
+  fill: inherit;
 }
