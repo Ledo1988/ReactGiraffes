@@ -1,15 +1,13 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
 import s from "./Menu.module.scss";
+import MenuItem from "../MenuItem/MenuItem";
 
 const Menu = () => {
 	return (
 		<section className={s.menu}>
 			<ul className={s.list}>
 				<li className={`${s.listItem} ${s.listItemProfile}`}>
-					<NavLink to="/main" activeClassName={s.listLinkActive} className={s.listLink}>
-						<span className={s.listTitle}>Главная</span>
-					</NavLink>
+					<MenuItem />
 				</li>
 				<li className={`${s.listItem} ${s.listItemMessages}`}>
 					<NavLink to="/management" activeClassName={s.listLinkActive} className={s.listLink}>

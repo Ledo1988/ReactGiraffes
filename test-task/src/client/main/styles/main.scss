@@ -10,14 +10,18 @@
   padding: $grid-unit*3  $grid-unit*3  $grid-unit*3  $grid-unit*8;
   border-radius: 35px;
   display: grid;
-  grid-template-areas: "header main" "menu main";
+  grid-template-areas: "header" "main";
   grid-template-columns: 294px auto;
   grid-auto-rows: max-content;
-  grid-gap: 55px 25px;
+  grid-gap: 0 25px;
 }
 
 .green-bg {
   background-color: $color-Glade-Green;
+}
+
+.main {
+  grid-area: main;
 }
 
 .view {
