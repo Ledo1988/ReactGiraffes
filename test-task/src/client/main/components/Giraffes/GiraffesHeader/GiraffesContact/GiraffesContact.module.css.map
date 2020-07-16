@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,SAAU;EACR,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,QAAQ",
+"sources": ["GiraffesContact.module.scss"],
+"names": [],
+"file": "GiraffesContact.module.css"
+}

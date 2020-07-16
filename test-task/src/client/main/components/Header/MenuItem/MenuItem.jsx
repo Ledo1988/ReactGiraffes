@@ -7,7 +7,7 @@ const MenuItem = (props) => {
 	let classNames = ['menu-link', s.link, props.className].join(" ");
 
 	return (
-		<NavLink to={props.to} activeClassName={s.linkActive} className={classNames}>
+		<NavLink exact={props.exact} to={props.to} activeClassName={s.linkActive} className={classNames}>
 			<MySvg class={props.svgClass} name={props.svgSrc} height={props.svgHeight} width={props.svgWidth} />
 			<span className={s.linkTitle}>{props.name}</span>
 		</NavLink>

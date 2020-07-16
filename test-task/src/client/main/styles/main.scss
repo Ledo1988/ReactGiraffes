@@ -12,7 +12,6 @@
   display: grid;
   grid-template-areas: "header main";
   grid-template-columns: 237px auto;
-  grid-auto-rows: max-content;
   grid-gap: 0 25px;
 }
 
@@ -25,20 +24,11 @@
 }
 
 .view {
-  @include container;
-  display: grid;
-  width: 100%;
-  grid-template-areas: "menu sidebar" "main sidebar";
-  grid-auto-flow: dense;
-  grid-template-columns: 8fr 4fr;
-  grid-gap: 0 $grid-unit*7;
+  background: $color-white;
+  border-radius: 25px;
+  height: 100%;
+  padding: 30px 40px 30px 50px;
 }
-
-.content {
-  padding: $grid-unit*2 0;
-}
-
-
 
 svg path {
   fill: inherit;

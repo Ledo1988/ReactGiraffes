@@ -26,7 +26,8 @@ const Menu = () => {
 							  svgWidth={28}/>
 				</li>
 			<li className={s.listItem}>
-					<MenuItem to="/giraffes"
+					<MenuItem exact={true}
+						to="/"
 							  name="Жирафы"
 							  className="giraffes"
 							  svgClass={'beige'}

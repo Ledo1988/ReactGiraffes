@@ -1,0 +1,31 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.link {
+  &Alert {
+    color: $color-primary;
+    margin-right: 24px;
+  }
+
+  &Mail {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &Img {
+    width: 34px;
+    height: 34px;
+    margin-right: 13px;
+  }
+
+  &Title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-Tundora;
+  }
+}
